@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany121212-ChessTG1212-3";
 const contentToCache = [
-    "Build/8d29fbd3ce8e2bacd0b9a73c1ab389a6.loader.js",
-    "Build/4f6e9972efca9ee9a325b6ae366c1377.framework.js",
-    "Build/5af8a8841b63c3b9f7d77163436e19a2.data",
-    "Build/a72fecaed1ed0de663c0b1050582d577.wasm",
+    "Build/c44cd587c28c2e426f5e1cfe6d0f204a.loader.js",
+    "Build/4d36429f1a5b801492f6dca0f2b3d842.framework.js",
+    "Build/468731832a1be024f7e13dafadf2f535.data",
+    "Build/facbf4d032b6970d2c4a313c5065ecc5.wasm",
     "TemplateData/style.css"
 
 ];
@@ -11,11 +11,11 @@ const contentToCache = [
 self.addEventListener('install', function (e) {
     console.log('[Service Worker] Install');
     
-    //e.waitUntil((async function () {
-      //const cache = await caches.open(cacheName);
-      //console.log('[Service Worker] Caching all: app shell and content');
-      //await cache.addAll(contentToCache);
-    //})());
+    e.waitUntil((async function () {
+      const cache = await caches.open(cacheName);
+      console.log('[Service Worker] Caching all: app shell and content');
+      await cache.addAll(contentToCache);
+    })());
 });
 
 self.addEventListener('fetch', function (e) {
