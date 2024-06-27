@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany121212-ChessTG1212-3";
 const contentToCache = [
-    "Build/13de8e7dc25ae1dea4b2de32828f1104.loader.js",
-    "Build/62e0b3ce52e4d349e0178dca4067d183.framework.js",
-    "Build/024641d5b8f729cf957273f0f01f99f5.data",
-    "Build/e70e983897ee8faa2b640639b98a52f6.wasm",
+    "Build/3f411cd13e05915f83bb55410a4d33d0.loader.js",
+    "Build/81ff667be71f16bcd3177c835232564e.framework.js",
+    "Build/07863ffdcec2dacb072dde0032e5e421.data",
+    "Build/0c7850992bef5dd1a96d99e8f3979327.wasm",
     "TemplateData/style.css"
 
 ];
